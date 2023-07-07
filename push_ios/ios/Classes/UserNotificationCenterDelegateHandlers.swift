@@ -23,7 +23,7 @@ class UserNotificationCenterDelegateHandlers: NSObject, UNUserNotificationCenter
         } else {
             // Display the local notification.
             if #available(iOS 14.0, *) {
-                completionHandler(.banner)
+                completionHandler([.banner, .sound])
             } else {
                 completionHandler(.alert)
             }
@@ -34,12 +34,12 @@ class UserNotificationCenterDelegateHandlers: NSObject, UNUserNotificationCenter
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> ()) {
         // Avoid sending the message that launched the app. We will send that one when the user requests for the "Push.instance.notificationTapWhichLaunchedAppFromTerminated" (Dart code)
-        if (userTapsOnNotificationCount > 0) {
+        // if (userTapsOnNotificationCount > 0) {
 //            let message = PURemoteMessage.fromNotificationContent(content: response.notification.request.content)
-            pushFlutterApi.onNotificationTapData(response.notification.request.content.userInfo as! [String: Any]) { _ in  }
-        }
+        pushFlutterApi.onNotificationTapData(response.notification.request.content.userInfo as! [String: Any]) { _ in  }
+        // }
         callOriginalDidReceiveDelegateMethod(center: center, response: response, completionHandler: completionHandler)
-        userTapsOnNotificationCount += 1
+        // userTapsOnNotificationCount += 1
     }
 
     // Allow users original UNUserNotificationCenterDelegate they set to respond.
