@@ -1,3 +1,23 @@
+## 1.0.5
+
+- [feature(ios): Added logic to parse and use presentation parameters](https://github.com/ben-xD/push/pull/33)
+
+## 1.0.4
+
+- [fix(ios): don't show duplicate first tapped notification #25](https://github.com/ben-xD/push/pull/25). First one didn't fix it.
+
+## 1.0.3
+
+- [fix(ios): don't show duplicate first tapped notification #25](https://github.com/ben-xD/push/pull/25)
+
+## 1.0.2
+
+- [fix(android): fix PushApi.RemoteMessage notification attribute serialization](https://github.com/ben-xD/push/pull/21)
+
+## 1.0.1
+
+- fix(ios): fix first notification tap
+
 ## 1.0.0
 
 - feat: support requesting permissions to show notification to users on Android (required on Android 13 and newer).

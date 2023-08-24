@@ -1,3 +1,19 @@
+## 0.1.4
+
+- [feature(ios): Added logic to parse and use presentation parameters](https://github.com/ben-xD/push/pull/33)
+
+## 0.1.3
+
+- [fix(ios): don't show duplicate first tapped notification #25](https://github.com/ben-xD/push/pull/25). The first one didn't work.
+
+## 0.1.2
+
+- [fix(ios): don't show duplicate first tapped notification #25](https://github.com/ben-xD/push/pull/25)
+
+## 0.1.1
+
+- fix(ios): fix first notification tap
+
 ## 0.1.0
 
 - refactor: implement new push_platform_interface (no feature change)
