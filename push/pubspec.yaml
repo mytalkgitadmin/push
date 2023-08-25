@@ -15,7 +15,6 @@ dependencies:
 
   # Federated package dependencies
   push_platform_interface: ^0.2.0
-  push_android: ^0.1.1
   push_ios: ^0.1.3
   push_macos: ^0.0.1
   # End of federated package dependencies
@@ -51,8 +50,6 @@ flutter:
   uses-material-design: false
   plugin:
     platforms:
-      android:
-        default_package: push_android
       ios:
         default_package: push_ios
   # To add assets to your package, add an assets section, like this:

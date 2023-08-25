@@ -303,14 +303,6 @@ packages:
       relative: true
     source: path
     version: "1.0.5"
-  push_android:
-    dependency: transitive
-    description:
-      name: push_android
-      sha256: "1ae53ceee5d2c489102f7ae53ec1331e949dbba787cc4ff191ffe8b7b0965c17"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.1"
   push_ios:
     dependency: transitive
     description:
